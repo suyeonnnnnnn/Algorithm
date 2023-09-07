@@ -8,12 +8,14 @@ function solution(people, limit) {
 
     while (start <= end) {
         if (people[start] + people[end] <= limit) {
+            answer++;
             start++;
             end--;
         } else {
+            answer++;
             end--;  
         }
-        answer++;
+        
     }
 
     return answer;
