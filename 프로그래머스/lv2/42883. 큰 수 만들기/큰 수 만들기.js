@@ -5,7 +5,8 @@ function solution(number, k) {
 
     for(let i = 0; i < number.length; i++) {
        
-        while (array.length && k > 0 && array[array.length - 1] < number[i]) {
+        while (k > 0 && array[array.length - 1] < number[i]) {
+        // 마지막 원소가 현재보다 작으면 
             k--;
             array.pop();
         
