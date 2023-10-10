@@ -5,11 +5,12 @@ function solution(prices) {
         let count = 0;
         for(let j = i+1; j < prices.length; j++){ 
             count++;
+            // 가격 떨어지면
             if(prices[j] < prices[i]) {
                 break;
             }
         }
-        answer.push(count);
+        answer[i] = count;
     }
     return answer; 
 }
